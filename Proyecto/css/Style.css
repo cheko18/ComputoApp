@@ -1,0 +1,196 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("../media/imagen/Nodos.jfif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*Fixed es para que no se mueva*/
+    font-family: 'calibri';
+    background-size: 1920px  1080px;
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Se le da tamaño al menú */
+.menu {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/* Se le da estilo y tamaño al logo de inicio */
+.logoinicio {
+	content: url("../media/imagen/Logo.JPG");
+	height: 50px;
+	width: 160px;
+	float: left;
+	padding: 8px;
+
+}
+
+
+.headerinicio{
+	background: #3c67a0; /*#292929;*/
+	width: 100%;
+	clear: both;
+	content: '';
+	display: table;
+}
+
+nav{
+	float: right;
+}
+
+nav ul li{
+	list-style: none;
+	margin-left: 25px;
+	padding: 12px 0;
+	float: left;
+	position: relative;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+nav ul li a::before{
+	display: block;
+	content: '';
+	width: 0%;
+	background: #ffffff;
+	height: 5px;
+	top: 0;
+	position: absolute;
+	transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+	width: 100%;
+}
+
+.titulos{
+	font-family: impact;
+	color: #000000;
+	font-size: 35px;
+}
+
+h1{
+    text-align: center;
+    color: #CFCFCF;
+    font-size: 40px;
+}
+
+h2{
+    font-family: candara;
+    text-align: center;
+    color: #515A5A;
+    font-size: 30px;
+}
+
+/* BOTONES DOCTORES */
+
+.boton-perfil{
+	font-family: verdana;
+	text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.boton-perfil:hover{
+	font-family: verdana;
+	text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    opacity: 50%;
+}
+
+.boton-cita{
+	font-family: verdana;
+	text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #515A5A;
+    border-radius: 6px;
+    border: 2px solid #17202A;
+}
+
+.boton-cita:hover{
+	font-family: verdana;
+	text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #515A5A;
+    border-radius: 6px;
+    border: 2px solid #17202A;
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@charset "utf-8";
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #3c67a0;
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;
+    color: #ffffff;   
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
